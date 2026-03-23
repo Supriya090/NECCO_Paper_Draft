@@ -1,0 +1,155 @@
+% LREC 2026 Example; 
+% LREC Is now using templates similar to the ACL ones. 
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[final]{lrec2026} % this is the new style
+% the 'review' option anonymizes the paper following submission guideline
+% the 'final' option produces the camera ready version (non anonymized)
+% default version is 'final', so use review option for submission
+
+\title{NeCCo: Nepali Cultural Commonsense Benchmark for Large Language Model Evaluation}
+
+\name{
+Shrestha, Sanket$^{1}$\thanks{Equal contribution}, Ghimire, Sadikshya$^{1}$\footnotemark[1] Regmi, Raunak$^{1}$\footnotemark[1] Rana, Satyam$^{1}$
+}
+
+\address{
+$^{1}$Sunway College Kathmandu; Birmingham City University, Kathmandu, Nepal \\
+}
+
+\abstract{
+Large language models perform strongly on standard evaluation suites, yet these benchmarks largely prioritize high-resource languages and culturally dominant knowledge, leaving culture-specific commonsense under-examined. For low-resource languages such as Nepali, everyday interaction depends on culturally embedded signals like kinship hierarchies, ritual practices, food systems, idioms, and honorific distinctions that cannot be recovered through literal translation. As a result, models that appear competent on global metrics often fail in local contexts. To address this gap, we introduce NeCCo, a curated multiple-choice benchmark for culturally situated reasoning across five domains: kinship and social hierarchy, gastronomy and agriculture, festivals and geography, idioms and metaphors, and everyday commonsense. The dataset is developed through structured authoring, cross-review, and normalization, and released in Devanagari, English, and Romanized formats to probe representation sensitivity. We evaluate multiple state-of-the-art LLMs under standardized prompting and controlled decoding. Results show substantial variance: models perform better on globally documented knowledge (e.g., geography), but struggle with relational and linguistically implicit tasks such as extended kinship reasoning or proverb interpretation. Even smaller, culturally dense categories expose brittleness and hallucination. These findings demonstrate that multilingual competence requires more than translation coverage and underscore the need for culturally grounded benchmarks and training signals.}
+
+\begin{document}
+
+\maketitleabstract
+
+% Keywords (placed immediately below abstract/title block)
+\vspace{-0.5em}
+\noindent\textbf{Keywords:} Nepali; Cultural Commonsense; Low-Resource Languages; Large Language Models; Multilingual Benchmarking; Cross-Cultural Reasoning; Dataset Construction; LLM Evaluation
+
+\section{Introduction}
+Nepali is a low-resource Indo-Aryan language spoken by over 17 million people and used as the official language of Nepal. Despite its sociolinguistic richness and diverse dialectal variation, Nepali remains underrepresented in large-scale language model training data and evaluation benchmarks. Existing multilingual benchmarks tend to emphasize high-resource languages or evaluate translation-equivalent tasks, offering limited insight into culturally grounded reasoning in languages such as Nepali.
+
+Cultural commonsense is deeply embedded in social structure, ritual practice, kinship systems, food traditions, and pragmatic norms. In Nepali society, meaning often depends on hierarchical kinship relations (e.g., differentiating between elder and younger paternal uncles), honorific systems that encode age and status distinctions, ritual etiquette, and idiomatic expressions that resist literal translation. Such knowledge is not explicitly documented in globally available corpora and cannot be inferred through surface lexical similarity. Consequently, large language models (LLMs) trained primarily on high-resource, globally dominant content may appear competent in general benchmarks while failing in culturally specific reasoning tasks.
+
+To systematically investigate this gap, we introduce NeCCo, a culturally anchored multiple-choice benchmark for Nepali commonsense reasoning. The benchmark spans five domains: kinship and social hierarchy, gastronomy and agriculture, festivals and geography, idioms and metaphors, and everyday commonsense. The dataset is constructed through structured authoring by native speakers, cross-review for ambiguity reduction, and standardized formatting. It is released in Devanagari, English translation, and Romanized variants to examine representation sensitivity.
+
+We further benchmark multiple state-of-the-art LLMs under standardized prompting and decoding strategies to quantify performance disparities across cultural categories. Our analysis reveals category-specific weaknesses, particularly in relational and pragmatically implicit reasoning.
+
+This work makes three primary contributions: (1) the creation of a culturally grounded Nepali commonsense benchmark; (2) a systematic evaluation of contemporary LLMs on culturally embedded reasoning tasks; and (3) evidence-based recommendations for culturally aware dataset construction and multilingual model training. We argue that culturally specific benchmarks are essential for faithful evaluation and equitable progress in low-resource language modeling.
+
+\section{Related Work}
+\label{sec:append-how-prod}
+In the Indic context, several benchmarks have been proposed to address the lack of evaluation resources for low-resource and culturally diverse languages. SANSKRITI provides a large-scale dataset covering multiple cultural dimensions across India and evaluates LLMs on culturally rich domains such as rituals, cuisine, and traditions, revealing significant performance disparities across models . Similarly, MILU introduces a multi-task Indic benchmark spanning multiple domains and languages, showing that LLMs perform worse on culturally relevant subjects compared to general domains like STEM .
+Other efforts such as Indic-QA benchmarks and IndicParam further emphasize the need for realistic, context-aware evaluation in low-resource settings, where models often produce incorrect or illogical outputs despite improvements from few-shot prompting . Additionally, large-scale multilingual evaluations such as PARIKSHA demonstrate that even state-of-the-art LLMs exhibit inconsistent performance and reduced reliability across Indic languages, particularly in culturally nuanced tasks .
+Overall, prior work consistently shows that while LLMs achieve strong performance on global benchmarks, they struggle with culturally grounded reasoning, particularly in low-resource and Indic language settings.
+
+\section{Methodology}
+
+\subsection{Dataset Creation}
+
+\paragraph{Dataset Overview}
+The Nepali Cultural \& Commonsense Benchmark (NeCCo) is a curated dataset comprising over 1,250 multiple-choice questions (MCQs) designed to evaluate culturally grounded reasoning in Nepali. Each question follows a standardized four-option format (A, B, C, D) with a single unambiguous correct answer. The dataset emphasizes implicit cultural knowledge that cannot be inferred through direct translation or surface-level reasoning. To support representation sensitivity, each entry is provided in three aligned forms: original Nepali (Devanagari script), Romanized Nepali, and English translation.
+
+\paragraph{Collaborative Construction}
+The dataset was developed collaboratively by a team of native Nepali speakers. Each contributor was assigned a primary category and generated over 250 questions, ensuring both domain specialization and diversity of coverage. This decentralized authorship enabled incorporation of culturally nuanced and experience-driven knowledge that is often absent from written corpora.
+
+\paragraph{Category Design}
+To comprehensively capture Nepali cultural knowledge, the dataset is divided into five categories:
+
+\begin{itemize}
+    \item \textbf{Kinship \& Social Hierarchy:} Covers intricate familial relations, hierarchical distinctions, honorific usage, and caste or ethnicity-specific titles reflecting Nepal’s social structure.
+    
+    \item \textbf{Festivals, Rituals \& Geography:} Includes festival practices (e.g., Dashain, Tihar), local jatras, agricultural calendars, and geographically grounded reasoning tied to terrain and regions.
+    
+    \item \textbf{Idioms, Proverbs \& Metaphors:} Focuses on culturally embedded expressions whose meanings cannot be derived literally and require contextual interpretation.
+    
+    \item \textbf{Commonsense \& Daily Life:} Captures implicit norms, etiquette, and everyday practices such as social behavior, food pairings, and household customs.
+    
+    \item \textbf{Gastronomy, Agriculture \& Nature:} Encompasses ingredients, cooking practices, agricultural cycles, tools, and culturally significant flora and fauna.
+\end{itemize}
+
+These categories were selected to reflect core dimensions of Nepali life, including social organization, ritual practices, linguistic expression, and subsistence patterns.
+
+\paragraph{Dataset Structure}
+Each instance in the dataset follows a structured tabular format:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Field} & \textbf{Description} \\
+\hline
+ID & Unique identifier for each question \\
+Category & Assigned cultural domain \\
+Question & MCQ prompt \\
+Option A & First answer choice \\
+Option B & Second answer choice \\
+Option C & Third answer choice \\
+Option D & Fourth answer choice \\
+Correct Option & Ground truth answer \\
+\hline
+\end{tabular}
+\caption{Structure of each dataset entry}
+\label{tab:dataset_structure}
+\end{table}
+
+This structure ensures reproducibility and facilitates systematic evaluation.
+
+\paragraph{Data Collection}
+Data was sourced from a combination of references, including publicly available resources (e.g., Wikipedia articles on Nepali culture), books, grammar materials, and oral knowledge from native speakers and community elders. Contributors also leveraged lived cultural experience to ensure authenticity and diversity across ethnic and regional contexts.
+
+\paragraph{Quality Assurance}
+To ensure high-quality annotations, the dataset creation process followed a multi-stage validation pipeline. After initial authoring, datasets were exchanged among contributors for peer review. Each entry was labeled as \textit{Keep}, \textit{Modify}, or \textit{Delete} based on criteria including ambiguity, cultural accuracy, plausibility of distractors, and clarity of phrasing. Revisions were made through iterative feedback and consensus discussions.
+
+\paragraph{Post-processing and Cleaning}
+Following peer review, the dataset underwent manual inspection to correct spelling errors, grammatical inconsistencies, and factual inaccuracies. Additionally, a custom cleaning pipeline was applied to detect duplicate entries, verify CSV formatting integrity, check for missing values, and ensure correct ID sequencing. This process resulted in a consistent and error-free dataset.
+
+\paragraph{Translation and Alignment}
+Initial English translations were generated using machine translation tools to establish a baseline. These were subsequently refined manually by bilingual native speakers to ensure semantic fidelity, especially for culturally sensitive constructs such as idioms and kinship terms. Romanization was standardized across entries. Multiple rounds of cross-checking were conducted to ensure alignment across Nepali, Romanized, and English versions, minimizing translation-induced bias.
+
+\subsection{Experimental Setup}
+
+\subsubsection{LLMs Used}
+We evaluate a range of state-of-the-art large language models (LLMs) to assess their ability to perform culturally grounded reasoning in Nepali. Models are selected to represent diverse architectures, training paradigms, and multilingual capabilities.
+
+\subsubsection{Evaluation Procedure}
+Each model is evaluated under standardized prompting conditions. The task is framed as a multiple-choice question answering problem, where models are required to select the correct option from four candidates. Experiments are conducted under both zero-shot and few-shot settings to analyze the impact of guidance on performance.
+
+Inputs are provided in different representations, including Nepali (Devanagari), Romanized Nepali, and English translations, to examine sensitivity to script and language form. Model outputs are parsed and mapped to the closest matching option.
+
+Performance is measured using accuracy across categories, enabling fine-grained analysis of strengths and weaknesses in different cultural domains. Comparative evaluation is conducted to identify patterns of failure, including hallucination, over-generalization, and difficulty in relational or context-dependent reasoning.
+
+\subsubsection{Analysis Protocol}
+Results are analyzed both at aggregate and category levels to uncover disparities in model behavior. Particular attention is given to culturally dense categories such as kinship relations and idiomatic expressions, where implicit knowledge plays a critical role.
+
+\section{Evaluation Pipeline}
+
+\section{Results}
+Our main section
+
+We will have multiple tables and graphs, based on each section
+
+\section{Discussion}
+We discuss our results, talk about why benchmarking is important
+
+Interesting findings from our results
+
+\section{Conclusion}
+
+% References sections (keep as per template requirements)
+\bibliographystyle{lrec2026-natbib}
+\bibliography{lrec2026-example}
+
+\section{Language Resource References}
+\label{lr:ref}
+\bibliographystylelanguageresource{lrec2026-natbib}
+\bibliographylanguageresource{languageresource}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

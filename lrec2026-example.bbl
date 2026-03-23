@@ -1,0 +1,337 @@
+\begin{thebibliography}{39}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Agarwal et~al.(2025)Agarwal, Ahmad, Ai, Altman, Applebaum, Arbus,
+  Arora, Bai, Baker, Bao, Barak, Bennett, Bertao, Brett, Brevdo, Brockman,
+  Bubeck, Chang, Chen, Chen, Cheung, Clark, Cook, Dukhan, Dvorak, Fives,
+  Fomenko, Garipov, Georgiev, Glaese, Gogineni, Goucher, Gross, Gil~Guzman,
+  Hallman, Hehir, Heidecke, Helyar, Hu, Huet, Huh, Jain, Johnson, Koch, Kofman,
+  Kundel, Kwon, Kyrylov, Le, Leclerc, Lennon, Lessans, Lezcano-Casado, Li, Li,
+  Lin, Liss, Liu, Liu, Lu, Lu, Martinovic, McCallum, McGrath, McKinney,
+  McLaughlin, Mei, Mostovoy, Mu, Myles, Neitz, Nichol, Pachocki, Paino, Palmie,
+  Pantuliano, Parascandolo, Park, Pathak, Paz, Peran, Pimenov, Pokrass, Proehl,
+  Qiu, Raila, Raso, Ren, Richardson, Robinson, Rotsted, Salman, Sanjeev,
+  Schwarzer, Sculley, Sikchi, Simon, Singhal, Song et~al.}]{openai2025gptoss}
+Sandhini Agarwal, Lama Ahmad, Jason Ai, Sam Altman, Andy Applebaum, Edwin
+  Arbus, Rahul~K. Arora, Yu~Bai, Bowen Baker, Haiming Bao, Boaz Barak, Ally
+  Bennett, Tyler Bertao, Nivedita Brett, Eugene Brevdo, Greg Brockman,
+  Sebastien Bubeck, Che Chang, Kai Chen, Mark Chen, Enoch Cheung, Aidan Clark,
+  Dan Cook, Marat Dukhan, Casey Dvorak, Kevin Fives, Vlad Fomenko, Timur
+  Garipov, Kristian Georgiev, Mia Glaese, Tarun Gogineni, Adam Goucher, Lukas
+  Gross, Katia Gil~Guzman, John Hallman, Jackie Hehir, Johannes Heidecke, Alec
+  Helyar, Haitang Hu, Romain Huet, Jacob Huh, Saachi Jain, Zach Johnson, Chris
+  Koch, Irina Kofman, Dominik Kundel, Jason Kwon, Volodymyr Kyrylov, Elaine~Ya
+  Le, Guillaume Leclerc, James~Park Lennon, Scott Lessans, Mario
+  Lezcano-Casado, Yuanzhi Li, Zhuohan Li, Ji~Lin, Jordan Liss, Xiaoxuan Liu,
+  Jiancheng Liu, Kevin Lu, Chris Lu, Zoran Martinovic, Lindsay McCallum, Josh
+  McGrath, Scott McKinney, Aidan McLaughlin, Song Mei, Steve Mostovoy, Tong Mu,
+  Gideon Myles, Alexander Neitz, Alex Nichol, Jakub Pachocki, Alex Paino, Dana
+  Palmie, Ashley Pantuliano, Giambattista Parascandolo, Jongsoo Park, Leher
+  Pathak, Carolina Paz, Ludovic Peran, Dmitry Pimenov, Michelle Pokrass,
+  Elizabeth Proehl, Huida Qiu, Gaby Raila, Filippo Raso, Hongyu Ren, Kimmy
+  Richardson, David Robinson, Bob Rotsted, Hadi Salman, Suvansh Sanjeev, Max
+  Schwarzer, D.~Sculley, Harshit Sikchi, Kendal Simon, Karan Singhal, Yang
+  Song, et~al. 2025.
+\newblock \href {https://arxiv.org/abs/2508.10925} {{gpt-oss-120b} and
+  {gpt-oss-20b} model card}.
+\newblock \emph{arXiv preprint arXiv:2508.10925}.
+
+\bibitem[{Cahyawijaya(2024)}]{cahyawijaya2024llm}
+Samuel Cahyawijaya. 2024.
+\newblock \emph{Llm for everyone: Representing the underrepresented in large
+  language models}.
+\newblock Hong Kong University of Science and Technology (Hong Kong).
+
+\bibitem[{Chiu et~al.(2025)Chiu, Jiang, Lin, Park, Li, Ravi, Bhatia, Antoniak,
+  Tsvetkov, Shwartz, and Choi}]{chiu2025culturalbenchrobustdiversechallenging}
+Yu~Ying Chiu, Liwei Jiang, Bill~Yuchen Lin, Chan~Young Park, Shuyue~Stella Li,
+  Sahithya Ravi, Mehar Bhatia, Maria Antoniak, Yulia Tsvetkov, Vered Shwartz,
+  and Yejin Choi. 2025.
+\newblock \href {http://arxiv.org/abs/2410.02677} {Culturalbench: A robust,
+  diverse, and challenging cultural benchmark by human-ai culturalteaming}.
+
+\bibitem[{Clark et~al.(2020)Clark, Choi, Collins, Garrette, Kwiatkowski,
+  Nikolaev, and Palomaki}]{clark2020tydi}
+Jonathan~H Clark, Eunsol Choi, Michael Collins, Dan Garrette, Tom Kwiatkowski,
+  Vitaly Nikolaev, and Jennimaria Palomaki. 2020.
+\newblock Tydi qa: A benchmark for information-seeking question answering in ty
+  pologically di verse languages.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  8:454--470.
+
+\bibitem[{Guzm{\'a}n et~al.(2019)Guzm{\'a}n, Chen, Ott, Pino, Lample, Koehn,
+  Chaudhary, and Ranzato}]{guzman2019flores}
+Francisco Guzm{\'a}n, Peng-Jen Chen, Myle Ott, Juan Pino, Guillaume Lample,
+  Philipp Koehn, Vishrav Chaudhary, and Marc’Aurelio Ranzato. 2019.
+\newblock The flores evaluation datasets for low-resource machine translation:
+  Nepali--english and sinhala--english.
+\newblock In \emph{Proceedings of the 2019 conference on empirical methods in
+  natural language processing and the 9th international joint conference on
+  natural language processing (EMNLP-IJCNLP)}, pages 6098--6111.
+
+\bibitem[{Hesham and Hamdy(2024)}]{hesham2024finetuning}
+Alaa Hesham and Abeer Hamdy. 2024.
+\newblock \href {https://doi.org/10.1109/ICCA62237.2024.10928044} {Fine-tuning
+  {GPT-4o-Mini} for programming questions generation}.
+\newblock In \emph{Proceedings of the 2024 International Conference on Computer
+  and Applications (ICCA)}, pages 1--6.
+
+\bibitem[{Hu et~al.(2020)Hu, Ruder, Siddhant, Neubig, Firat, and
+  Johnson}]{hu2020xtreme}
+Junjie Hu, Sebastian Ruder, Aditya Siddhant, Graham Neubig, Orhan Firat, and
+  Melvin Johnson. 2020.
+\newblock Xtreme: A massively multilingual multi-task benchmark for evaluating
+  cross-lingual generalisation.
+\newblock In \emph{International conference on machine learning}, pages
+  4411--4421. PMLR.
+
+\bibitem[{Joshi et~al.(2025)Joshi, Gogoi, Mirza, Jansari, Yadavalli, Pandey,
+  Shukla, Sudharsan, Bali, and Seshadri}]{joshi2025elr}
+Neha Joshi, Pamir Gogoi, AasimBaig Mirza, Aayush Jansari, Aditya Yadavalli,
+  Ayushi Pandey, Arunima Shukla, Deepthi Sudharsan, Kalika Bali, and Vivek
+  Seshadri. 2025.
+\newblock Elr-1000: A community-generated dataset for endangered indic
+  indigenous languages.
+\newblock In \emph{Proceedings of the 14th International Joint Conference on
+  Natural Language Processing and the 4th Conference of the Asia-Pacific
+  Chapter of the Association for Computational Linguistics}, pages 2441--2457.
+
+\bibitem[{Kazemi et~al.(2025)Kazemi, Fatemi, Bansal, Palowitch, Anastasiou,
+  Mehta, Jain, Aglietti, Jindal, Chen et~al.}]{kazemi2025big}
+Mehran Kazemi, Bahare Fatemi, Hritik Bansal, John Palowitch, Chrysovalantis
+  Anastasiou, Sanket~Vaibhav Mehta, Lalit~K Jain, Virginia Aglietti, Disha
+  Jindal, Yuanzhu~Peter Chen, et~al. 2025.
+\newblock Big-bench extra hard.
+\newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 26473--26501.
+
+\bibitem[{Khadka and Bhattarai(2025)}]{khadka2025gender}
+Supriya Khadka and Bijayan Bhattarai. 2025.
+\newblock Gender bias in nepali-english machine translation: A comparison of
+  llms and existing mt systems.
+\newblock In \emph{Proceedings of the 6th Workshop on Gender Bias in Natural
+  Language Processing (GeBNLP)}, pages 75--82.
+
+\bibitem[{Khadka et~al.(2023)Khadka, G.C., Paudel, Shah, and
+  Joshi}]{khadka2023tts}
+Supriya Khadka, Ranju G.C., Prabin Paudel, Rahul Shah, and Basanta Joshi. 2023.
+\newblock Nepali text-to-speech synthesis using tacotron2 for melspectrogram
+  generation.
+\newblock In \emph{SIGUL 2023, 2nd Annual Meeting of the Special Interest Group
+  on Under-resourced Languages: a Satellite Workshop of Interspeech 2023}.
+
+\bibitem[{Ko(2026)}]{ko2026bilingualbias}
+Ju-Chun Ko. 2026.
+\newblock \href {https://arxiv.org/abs/2602.06371} {Bilingual bias in large
+  language models: A taiwan sovereignty benchmark study}.
+\newblock \emph{arXiv preprint arXiv:2602.06371}.
+
+\bibitem[{Krause(1980)}]{krause1980kinship}
+Britt Krause. 1980.
+\newblock Kinship, hierarchy and equality in north western nepal.
+\newblock \emph{Contributions to Indian Sociology}, 14(2):169--194.
+
+\bibitem[{Liang et~al.(2020)Liang, Duan, Gong, Wu, Guo, Qi, Gong, Shou, Jiang,
+  Cao et~al.}]{liang2020xglue}
+Yaobo Liang, Nan Duan, Yeyun Gong, Ning Wu, Fenfei Guo, Weizhen Qi, Ming Gong,
+  Linjun Shou, Daxin Jiang, Guihong Cao, et~al. 2020.
+\newblock Xglue: A new benchmark dataset for cross-lingual pre-training,
+  understanding and generation.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 6008--6018.
+
+\bibitem[{Liu et~al.(2025)Liu, Mei, Lin, Xue, Wang, Xu, Wu, Zhang, Lin, Dong
+  et~al.}]{deepseek2025v3}
+Aixin Liu, Aoxue Mei, Bangcai Lin, Bing Xue, Bingxuan Wang, Bingzheng Xu,
+  Bochao Wu, Bowei Zhang, Chaofan Lin, Chen Dong, et~al. 2025.
+\newblock \href {https://arxiv.org/abs/2512.02556} {Deepseek-v3.2: Pushing the
+  frontier of open large language models}.
+\newblock \emph{arXiv preprint arXiv:2512.02556}.
+
+\bibitem[{Ma et~al.(2026)Ma, Wang, Xu, Wu, Ding, Zhao, Wang, Hua, Wen, Liu,
+  Duan, Gao, Tan, Chen, Xue, Wang, Cheng, Chen, Wu, Li, and
+  Jiang}]{ma2026safetyreport}
+Xingjun Ma, Yixu Wang, Hengyuan Xu, Yutao Wu, Yifan Ding, Yunhan Zhao, Zilong
+  Wang, Jiabin Hua, Ming Wen, Jianan Liu, Ranjie Duan, Yifeng Gao, Yingshui
+  Tan, Yunhao Chen, Hui Xue, Xin Wang, Wei Cheng, Jingjing Chen, Zuxuan Wu,
+  Bo~Li, and Yu-Gang Jiang. 2026.
+\newblock \href {https://arxiv.org/abs/2601.10527} {A safety report on
+  {GPT-5.2}, {Gemini 3 Pro}, {Qwen3-VL}, {Grok 4.1 Fast}, {Nano Banana Pro},
+  and {Seedream 4.5}}.
+\newblock \emph{arXiv preprint arXiv:2601.10527}.
+
+\bibitem[{Maji et~al.(2025)Maji, Kumar, Ghosh, Anushka, and
+  Saha}]{maji2025sanskriti}
+Arijit Maji, Raghvendra Kumar, Akash Ghosh, Anushka Anushka, and Sriparna Saha.
+  2025.
+\newblock Sanskriti: A comprehensive benchmark for evaluating language
+  models’ knowledge of indian culture.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL 2025}, pages 4434--4451.
+
+\bibitem[{Nadeem et~al.(2021)Nadeem, Bethke, and Reddy}]{nadeem2021stereoset}
+Moin Nadeem, Anna Bethke, and Siva Reddy. 2021.
+\newblock Stereoset: Measuring stereotypical bias in pretrained language
+  models.
+\newblock In \emph{Proceedings of the 59th annual meeting of the association
+  for computational linguistics and the 11th international joint conference on
+  natural language processing (volume 1: long papers)}, pages 5356--5371.
+
+\bibitem[{Nangia et~al.(2020)Nangia, Vania, Bhalerao, and
+  Bowman}]{nangia2020crows}
+Nikita Nangia, Clara Vania, Rasika Bhalerao, and Samuel Bowman. 2020.
+\newblock Crows-pairs: A challenge dataset for measuring social biases in
+  masked language models.
+\newblock In \emph{Proceedings of the 2020 conference on empirical methods in
+  natural language processing (EMNLP)}, pages 1953--1967.
+
+\bibitem[{Nyachhyon et~al.(2025)Nyachhyon, Sharma, Thapa, and
+  Bal}]{nyachhyon2025consolidating}
+Jinu Nyachhyon, Mridul Sharma, Prajwal Thapa, and Bal~Krishna Bal. 2025.
+\newblock Consolidating and developing benchmarking datasets for the nepali
+  natural language understanding tasks.
+\newblock In \emph{Proceedings of the 14th International Joint Conference on
+  Natural Language Processing and the 4th Conference of the Asia-Pacific
+  Chapter of the Association for Computational Linguistics}, pages 1906--1925.
+
+\bibitem[{{OpenRouter}(n.d.)}]{openrouter2026}
+{OpenRouter}. n.d.
+\newblock Llm rankings.
+\newblock \url{https://openrouter.ai/rankings}.
+\newblock Accessed: 2026-02-21.
+
+\bibitem[{Parashar et~al.(2025)Parashar, Olson, Khurana, Li, Ling, Caverlee,
+  and Ji}]{parashar2025inference}
+Shubham Parashar, Blake Olson, Sambhav Khurana, Eric Li, Hongyi Ling, James
+  Caverlee, and Shuiwang Ji. 2025.
+\newblock Inference-time computations for llm reasoning and planning: A
+  benchmark and insights.
+\newblock \emph{arXiv preprint arXiv:2502.12521}.
+
+\bibitem[{Parrish et~al.(2022)Parrish, Chen, Nangia, Padmakumar, Phang,
+  Thompson, Htut, and Bowman}]{parrish2022bbq}
+Alicia Parrish, Angelica Chen, Nikita Nangia, Vishakh Padmakumar, Jason Phang,
+  Jana Thompson, Phu~Mon Htut, and Samuel Bowman. 2022.
+\newblock Bbq: A hand-built bias benchmark for question answering.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL 2022}, pages 2086--2105.
+
+\bibitem[{Peters et~al.(2022)Peters, Krauss, and
+  Braganza}]{peters2022generalization}
+Uwe Peters, Alexander Krauss, and Oliver Braganza. 2022.
+\newblock Generalization bias in science.
+\newblock \emph{Cognitive science}, 46(9):e13188.
+
+\bibitem[{Piao et~al.()Piao, Miao, Liu, He, Ma, Zhang, Wei, and
+  Tao}]{piaobeyond}
+Mengyao Piao, Lingqi Miao, Yilun Liu, Minggui He, Hongxia Ma, Li~Zhang, Daimeng
+  Wei, and Shimin Tao.
+\newblock Beyond the west: A survey of cultural datasets for
+  culturally-grounded llms.
+
+\bibitem[{Ponti et~al.(2020)Ponti, Glava{\v{s}}, Majewska, Liu, Vuli{\'c}, and
+  Korhonen}]{ponti2020xcopa}
+Edoardo~Maria Ponti, Goran Glava{\v{s}}, Olga Majewska, Qianchu Liu, Ivan
+  Vuli{\'c}, and Anna Korhonen. 2020.
+\newblock Xcopa: A multilingual dataset for causal commonsense reasoning.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 2362--2376.
+
+\bibitem[{Prabha et~al.(2018)Prabha, Jyothsna, Shahina, Premjith, and
+  Soman}]{prabha2018deep}
+Greeshma Prabha, PV~Jyothsna, KK~Shahina, B~Premjith, and KP~Soman. 2018.
+\newblock A deep learning approach for part-of-speech tagging in nepali
+  language.
+\newblock In \emph{2018 international conference on advances in computing,
+  communications and informatics (ICACCI)}, pages 1132--1136. IEEE.
+
+\bibitem[{Pradhan and Yajnik(2024)}]{pradhan2024parts}
+Ashish Pradhan and Archit Yajnik. 2024.
+\newblock Parts-of-speech tagging of nepali texts with bidirectional lstm,
+  conditional random fields and hmm.
+\newblock \emph{Multimedia Tools and Applications}, 83(4):9893--9909.
+
+\bibitem[{Sap et~al.(2019)Sap, Rashkin, Chen, Le~Bras, and
+  Choi}]{sap2019social}
+Maarten Sap, Hannah Rashkin, Derek Chen, Ronan Le~Bras, and Yejin Choi. 2019.
+\newblock Social iqa: Commonsense reasoning about social interactions.
+\newblock In \emph{Proceedings of the 2019 conference on empirical methods in
+  natural language processing and the 9th international joint conference on
+  natural language processing (EMNLP-IJCNLP)}, pages 4463--4473.
+
+\bibitem[{Shahi and Sitaula(2022)}]{shahi2022natural}
+Tej~Bahadur Shahi and Chiranjibi Sitaula. 2022.
+\newblock Natural language processing for nepali text: A review.
+\newblock \emph{Artificial Intelligence Review}, 55(4):3401--3429.
+
+\bibitem[{Singh et~al.(2019)Singh, Padia, and Joshi}]{singh2019named}
+Oyesh~Mann Singh, Ankur Padia, and Anupam Joshi. 2019.
+\newblock Named entity recognition for nepali language.
+\newblock In \emph{2019 IEEE 5th international conference on collaboration and
+  internet computing (cic)}, pages 184--190. IEEE.
+
+\bibitem[{Thakur(2025)}]{thakur2025culturally}
+Madhavendra Thakur. 2025.
+\newblock Culturally-grounded chain-of-thought (cg-cot): Enhancing llm
+  performance on culturally-specific tasks in low-resource languages.
+\newblock \emph{arXiv preprint arXiv:2506.01190}.
+
+\bibitem[{Thapa et~al.(2025)Thapa, Rauniyar, Veeramani, Adhikari, Razzak, and
+  Naseem}]{thapa2025probing}
+Surendrabikram Thapa, Kritesh Rauniyar, Hariram Veeramani, Surabhi Adhikari,
+  Imran Razzak, and Usman Naseem. 2025.
+\newblock Probing the limits of multilingual language understanding:
+  Low-resource language proverbs as llm benchmark for ai wisdom.
+\newblock In \emph{Proceedings of the 6th Workshop on Computational Approaches
+  to Discourse, Context and Document-Level Inferences (CODI 2025)}, pages
+  120--129.
+
+\bibitem[{Timilsina et~al.(2022)Timilsina, Gautam, and
+  Bhattarai}]{timilsina2022nepberta}
+Sulav Timilsina, Milan Gautam, and Binod Bhattarai. 2022.
+\newblock Nepberta: Nepali language model trained in a large corpus.
+\newblock In \emph{Proceedings of the 2nd Conference of the Asia-Pacific
+  Chapter of the Association for Computational Linguistics and the 12th
+  International Joint Conference on Natural Language Processing (Volume 2:
+  Short Papers)}, pages 273--284.
+
+\bibitem[{Toroghi et~al.(2025)Toroghi, Pesaranghader, Sadhu, and
+  Sanner}]{toroghi2025llm}
+Armin Toroghi, Ali Pesaranghader, Tanmana Sadhu, and Scott Sanner. 2025.
+\newblock Llm-based typed hyperresolution for commonsense reasoning with
+  knowledge bases.
+\newblock In \emph{The Thirteenth International Conference on Learning
+  Representations}.
+
+\bibitem[{Verma et~al.(2025)Verma, Khan, Kumar, Murthy, and
+  Sen}]{verma2025milu}
+Sshubam Verma, Mohammed Safi Ur~Rahman Khan, Vishwajeet Kumar, Rudra Murthy,
+  and Jaydeep Sen. 2025.
+\newblock Milu: A multi-task indic language understanding benchmark.
+\newblock In \emph{Proceedings of the 2025 Conference of the Nations of the
+  Americas Chapter of the Association for Computational Linguistics: Human
+  Language Technologies (Volume 1: Long Papers)}, pages 10076--10132.
+
+\bibitem[{Zake(2023)}]{zake2023holistic}
+Ieva Zake. 2023.
+\newblock Holistic bias in sociology: Contemporary trends.
+\newblock In \emph{The Palgrave Handbook of Methodological Individualism:
+  Volume II}, pages 403--421. Springer.
+
+\bibitem[{Zeng et~al.(2026)Zeng, Lv, Hou, Du, Zheng, Chen, Yin, Ge, Xie, Wang
+  et~al.}]{zeng2026glm5}
+Aohan Zeng, Xin Lv, Zhenyu Hou, Zhengxiao Du, Qinkai Zheng, Bin Chen, Da~Yin,
+  Chendi Ge, Chengxing Xie, Cunxiang Wang, et~al. 2026.
+\newblock \href {https://arxiv.org/abs/2602.15763} {Glm-5: from vibe coding to
+  agentic engineering}.
+\newblock \emph{arXiv preprint arXiv:2602.15763}.
+
+\bibitem[{Zhang et~al.(2026)Zhang, Wang, Hu, Wang, Fan, Chi, and
+  Yang}]{zhang2026ophthalmology}
+P.~Zhang, J.~Wang, X.~Hu, X.~Wang, X.~Fan, W.~Chi, and W.~Yang. 2026.
+\newblock \href {https://doi.org/10.3389/fcell.2026.1744389} {Comparative
+  performance of {GPT-4}, {GPT-o3}, {GPT-5}, {Gemini-3-Flash}, and
+  {DeepSeek-R1} in ophthalmology question answering}.
+\newblock \emph{Frontiers in Cell and Developmental Biology}, 14:1744389.
+
+\end{thebibliography}
