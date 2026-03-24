@@ -2,7 +2,7 @@
 % LREC Is now using templates similar to the ACL ones. 
 \documentclass[10pt, a4paper]{article}
 
-\usepackage[review]{lrec2026}
+\usepackage{lrec2026}
 \usepackage{cuted}
 \usepackage{capt-of} 
 \usepackage{graphicx}
@@ -131,14 +131,6 @@ After review, we manually corrected spelling, grammar, and factual issues. We al
 
 For the categories that include English, we generated initial translations using Google Translate\footnote{\href{https://translate.google.com/}{https://translate.google.com/}} and then refined them with bilingual native speakers to preserve meaning. Romanization was standardized across entries. Finally, we performed cross-checks to ensure consistent alignment across Devanagari, Romanized Nepali, and English variants.
 
-\begin{figure*}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{benchmark_bar_chart.png}
-    \caption{Comparative Accuracy across Categories}
-    \label{fig:benchmark_bar_chart}
-\end{figure*}
-
-
 \subsection{Experimental Setup}
 
 \subsubsection{LLMs Used}
@@ -146,9 +138,17 @@ We evaluate nine recent LLMs chosen to span a range of architectures, release ty
 
 The evaluated models are: GPT-4o-mini, GPT-5.2, and GPT-OSS-120B (OpenAI) \cite{hesham2024finetuning, ma2026safetyreport, openai2025gptoss}; Gemini 3 Flash Preview (Google DeepMind) \cite{zhang2026ophthalmology}; DeepSeek V3.2 \cite{deepseek2025v3}; Grok 4.1 Fast (xAI) \cite{ma2026safetyreport}; GLM-5 (Tsinghua University and Zhipu AI) \cite{zeng2026glm5}; Minimax M2.5 \cite{ko2026bilingualbias}; and Trinity Large Preview \cite{openrouter2026}. We include Trinity Large Preview in particular because it shows notably strong Nepali performance on OpenRouter, making it a relevant baseline for culturally grounded Nepali evaluation.
 
-\subsubsection{Evaluation Procedure}
-We use a standardized few-shot prompting setup (2-shot) for all models. Two fixed example question-answer pairs are prepended to every evaluation instance across all categories. Keeping the demonstrations and instructions constant ensures that performance differences primarily reflect the model’s reasoning, rather than variation in prompt framing. The prompt template and demonstrations are shown below.
+\begin{figure*}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{benchmark_bar_chart.png}
+    \caption{Comparative Accuracy across Categories}
+    \label{fig:benchmark_bar_chart}
+\end{figure*}
 
+\subsubsection{Evaluation Procedure}
+We use a standardized few-shot prompting setup (2-shot) for all models. Two fixed example question-answer pairs are prepended to every evaluation instance across all categories. Keeping the demonstrations and instructions constant ensures that performance differences primarily reflect the model’s reasoning, rather than variation in prompt framing. The prompt template and demonstrations are shown Figure~\ref{fig:prompt_template}.
+
+\begin{figure}
 \begin{tcolorbox}[
     colback=gray!5!white,
     colframe=gray!75!black,
@@ -189,6 +189,9 @@ We use a standardized few-shot prompting setup (2-shot) for all models. Two fixe
   \textbf{D:} \{D\}\\
   \textbf{Answer:}
 \end{tcolorbox}
+\caption{Prompt Template}
+\label{fig:prompt_template}
+\end{figure}
 
 All models are evaluated on the same four-way MCQ task and are instructed to output \emph{only} the option letter. We use a uniform system prompt and identical input formatting for all models to minimize differences due to verbosity, output style, or prompt interpretation, and to focus the evaluation on answer selection.
 

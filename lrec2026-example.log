@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.2)  26 FEB 2026 18:26
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.2)  24 MAR 2026 08:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,6 +1005,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
 
  []
@@ -1016,6 +1023,8 @@ m/n/9 Cultural Common sense, Low-Resource Languages, Multilingual Evaluation, B
 enchmark Con-
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 42.
 
 Underfull \hbox (badness 2478) in paragraph at lines 45--46
 \TU/texgyreheros-regular.otf(0)/m/n/10 multilingual benchmarks either focus on 
@@ -1049,10 +1058,7 @@ nd
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 55--56
-\TU/texgyreheros-regular.otf(0)/m/n/10 multiple-choice benchmark for evaluating
-
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1061,6 +1067,12 @@ Underfull \hbox (badness 7704) in paragraph at lines 55--56
 
 
 ]
+Underfull \hbox (badness 7704) in paragraph at lines 55--56
+\TU/texgyreheros-regular.otf(0)/m/n/10 multiple-choice benchmark for evaluating
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 []\TU/texgyreheros-regular.otf(0)/m/n/10 We provide recommendations for future
  []
@@ -1165,10 +1177,9 @@ Underfull \hbox (badness 3049) in paragraph at lines 83--84
  the
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 89.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 89.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 
@@ -1196,6 +1207,8 @@ reta-
  []
 
 
+
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 119--120
 []\TU/texgyreheros-regular.otf(0)/b/n/10 Gastronomy, Agriculture & Nature:
  []
@@ -1219,25 +1232,23 @@ Underfull \hbox (badness 1509) in paragraph at lines 119--120
  []
 
 
-
-[3]
 Underfull \hbox (badness 1454) in paragraph at lines 132--133
 []\TU/texgyreheros-regular.otf(0)/m/n/10 For the categories that include Englis
 h, we
  []
 
+
+
 File: benchmark_bar_chart.png Graphic file (type bmp)
 <benchmark_bar_chart.png>
 
-
-
-Underfull \hbox (badness 3049) in paragraph at lines 150--151
+Underfull \hbox (badness 3049) in paragraph at lines 149--150
 \TU/texgyreheros-regular.otf(0)/m/n/10 (2-shot) for all models. Two fixed examp
 le
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 150--151
+Underfull \hbox (badness 1173) in paragraph at lines 149--150
 \TU/texgyreheros-regular.otf(0)/m/n/10 question-answer pairs are prepended to e
 very
  []
@@ -1246,55 +1257,51 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoSansDevanagari' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-[4]
 File: language_comparison_bar.png Graphic file (type bmp)
 <language_comparison_bar.png>
 
+
+[4]
 
 File: overall_language_performance.png Graphic file (type bmp)
 <overall_language_performance.png>
 File: overall_ranking.png Graphic file (type bmp)
 <overall_ranking.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 [] []\TU/texgyreheros-regular.otf(0)/b/n/10 Comparative Accuracy across Categor
 ies.[]
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 238--239
+Underfull \hbox (badness 2165) in paragraph at lines 241--242
 \TU/texgyreheros-regular.otf(0)/m/n/10 Figure [][]1[][] illustrates a significa
 nt imbalance in
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 240--241
+
+[5]
+Underfull \hbox (badness 1852) in paragraph at lines 243--244
 \TU/texgyreheros-regular.otf(0)/m/n/10 performing models struggle in this area,
  with
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5]
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 246--247
+
+Underfull \hbox (badness 4084) in paragraph at lines 249--250
 [] []\TU/texgyreheros-regular.otf(0)/b/n/10 Overall Language Performance Across
  All
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 246--247
+Underfull \hbox (badness 2744) in paragraph at lines 249--250
 \TU/texgyreheros-regular.otf(0)/m/n/10 aggregate pattern suggests that non-stan
 dard
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 249--250
-[] []\TU/texgyreheros-regular.otf(0)/b/n/10 Overall Model Ranking.[] \TU/texgyr
-eheros-regular.otf(0)/m/n/10 Finally, Figure [][]3b[][]
  []
 
 
@@ -1303,9 +1310,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [6]
+Underfull \hbox (badness 5711) in paragraph at lines 252--253
+[] []\TU/texgyreheros-regular.otf(0)/b/n/10 Overall Model Ranking.[] \TU/texgyr
+eheros-regular.otf(0)/m/n/10 Finally, Figure [][]4b[][]
+ []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 271--272
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 274--275
 [] []\TU/texgyreheros-regular.otf(0)/b/n/10 Model Scaling and Local Knowledge G
 aps[]
  []
@@ -1313,17 +1326,16 @@ aps[]
 
 
 [7]
-Underfull \hbox (badness 2600) in paragraph at lines 281--282
+Underfull \hbox (badness 2600) in paragraph at lines 284--285
 \TU/texgyreheros-regular.otf(0)/m/n/10 We introduced NeCCo, a culturally ground
 ed
  []
 
 
-Underfull \vbox (badness 2426) has occurred while \output is active []
-
-
 
 (./lrec2026-example.bbl
+
+[8]
 Underfull \hbox (badness 6625) in paragraph at lines 15--38
 []\TU/texgyreheros-regular.otf(0)/m/n/10 Sandhini Agarwal, Lama Ahmad, Jason Ai
 ,
@@ -1365,8 +1377,6 @@ i-
  []
 
 
-
-[8]
 Underfull \hbox (badness 3471) in paragraph at lines 47--52
 []\TU/texgyreheros-regular.otf(0)/m/n/10 Yu Ying Chiu, Liwei Jiang, Bill Yuchen
  Lin,
@@ -1448,6 +1458,8 @@ Underfull \hbox (badness 1668) in paragraph at lines 190--196
 g
  []
 
+
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `texgyrecursor-regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1477,8 +1489,6 @@ ros-regular.otf(0)/m/it/10 arXiv preprint
  []
 
 
-
-
 Underfull \hbox (badness 3128) in paragraph at lines 213--218
 []\TU/texgyreheros-regular.otf(0)/m/n/10 Alicia Parrish, Angelica Chen, Nikita 
 Nangia,
@@ -1490,6 +1500,8 @@ Underfull \hbox (badness 4072) in paragraph at lines 213--218
  []
 
 
+
+[10]
 Underfull \hbox (badness 1895) in paragraph at lines 263--266
 \TU/texgyreheros-regular.otf(0)/m/n/10 Natural language processing for nepali t
 ext:
@@ -1503,8 +1515,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--266
  []
 
 
-
-[10]
 Underfull \hbox (badness 10000) in paragraph at lines 274--278
 \TU/texgyreheros-regular.otf(0)/m/n/10 chain-of-thought (cg-cot): Enhancing llm
 
@@ -1531,53 +1541,53 @@ ana
 
 
 )
-Underfull \hbox (badness 1331) in paragraph at lines 310--313
+Underfull \hbox (badness 1331) in paragraph at lines 313--316
 \TU/texgyreheros-regular.otf(0)/m/n/10 amples in parallel Devanagari Nepali, Ro
 man-
  []
 
 
-Overfull \hbox (7.12852pt too wide) in paragraph at lines 452--452
+Overfull \hbox (7.12852pt too wide) in paragraph at lines 455--455
 []|[]| 
  []
 
 
-Overfull \hbox (17.70354pt too wide) in paragraph at lines 452--452
+Overfull \hbox (17.70354pt too wide) in paragraph at lines 455--455
 []|[]| 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 452--452
+Underfull \hbox (badness 10000) in alignment at lines 455--455
 [][][][][] 
  []
 
 
-Overfull \hbox (14.93434pt too wide) in paragraph at lines 470--499
+Overfull \hbox (14.93434pt too wide) in paragraph at lines 473--502
  [][] 
  []
 
 
-Overfull \hbox (6.3304pt too wide) in paragraph at lines 510--539
+Overfull \hbox (6.3304pt too wide) in paragraph at lines 513--542
  [][] 
  []
 
 
-Overfull \hbox (11.3344pt too wide) in paragraph at lines 551--580
+Overfull \hbox (11.3344pt too wide) in paragraph at lines 554--583
  [][] 
  []
 
 
-Overfull \hbox (6.3304pt too wide) in paragraph at lines 591--620
+Overfull \hbox (6.3304pt too wide) in paragraph at lines 594--623
  [][] 
  []
 
 
-Overfull \hbox (16.3384pt too wide) in paragraph at lines 631--660
+Overfull \hbox (16.3384pt too wide) in paragraph at lines 634--663
  [][] 
  []
 
 
-Overfull \hbox (6.3304pt too wide) in paragraph at lines 671--700
+Overfull \hbox (6.3304pt too wide) in paragraph at lines 674--703
  [][] 
  []
 
@@ -1592,12 +1602,12 @@ Package rerunfilecheck Info: File `lrec2026-example.out' has not changed.
 (rerunfilecheck)             Checksum: 01569DF719D3A310F474390D7D8D2C85;3846.
  ) 
 Here is how much of TeX's memory you used:
- 28243 strings out of 473832
- 592076 string characters out of 5729482
- 1091807 words of memory out of 5000000
- 50863 multiletter control sequences out of 15000+600000
- 561613 words of font info for 79 fonts, out of 8000000 for 9000
+ 28270 strings out of 473832
+ 592632 string characters out of 5729482
+ 1091841 words of memory out of 5000000
+ 50884 multiletter control sequences out of 15000+600000
+ 563446 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,16n,107p,1627b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,16n,107p,1627b,685s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on lrec2026-example.pdf (14 pages).
