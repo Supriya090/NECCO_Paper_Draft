@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{41}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Agarwal et~al.(2025)Agarwal, Ahmad, Ai, Altman, Applebaum, Arbus,
@@ -160,6 +160,15 @@ Xingjun Ma, Yixu Wang, Hengyuan Xu, Yutao Wu, Yifan Ding, Yunhan Zhao, Zilong
   and {Seedream 4.5}}.
 \newblock \emph{arXiv preprint arXiv:2601.10527}.
 
+\bibitem[{Madhani et~al.(2023)Madhani, Parthan, Bedekar, Nc, Khapra,
+  Kunchukuttan, Kumar, and Khapra}]{madhani2023aksharantar}
+Yash Madhani, Sushane Parthan, Priyanka Bedekar, Gokul Nc, Ruchi Khapra, Anoop
+  Kunchukuttan, Pratyush Kumar, and Mitesh~M Khapra. 2023.
+\newblock Aksharantar: Open indic-language transliteration datasets and models
+  for the next billion users.
+\newblock In \emph{Findings of the association for computational linguistics:
+  Emnlp 2023}, pages 40--57.
+
 \bibitem[{Maji et~al.(2025)Maji, Kumar, Ghosh, Anushka, and
   Saha}]{maji2025sanskriti}
 Arijit Maji, Raghvendra Kumar, Akash Ghosh, Anushka Anushka, and Sriparna Saha.
@@ -221,6 +230,13 @@ Alicia Parrish, Angelica Chen, Nikita Nangia, Vishakh Padmakumar, Jason Phang,
 Uwe Peters, Alexander Krauss, and Oliver Braganza. 2022.
 \newblock Generalization bias in science.
 \newblock \emph{Cognitive science}, 46(9):e13188.
+
+\bibitem[{Pezeshkpour and Hruschka(2024)}]{pezeshkpour2024large}
+Pouya Pezeshkpour and Estevam Hruschka. 2024.
+\newblock Large language models sensitivity to the order of options in
+  multiple-choice questions.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  NAACL 2024}, pages 2006--2017.
 
 \bibitem[{Piao et~al.()Piao, Miao, Liu, He, Ma, Zhang, Wei, and
   Tao}]{piaobeyond}

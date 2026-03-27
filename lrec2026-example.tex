@@ -24,10 +24,11 @@
 \name{Sanket Shrestha$^{*}$\thanks{$^{*}$Equal contribution}, 
 Sadikshya Ghimire$^{*}$, 
 Raunak Regmi$^{*}$,
-Satyam Rana} 
+Satyam Rana,
+Supriya Khadka}
 
 \address{Sunway College Kathmandu; Birmingham City University, Kathmandu, Nepal\\
-         \{sanket\_24128469, sadikshya\_23140745, raunak\_regmi\_a25, satyam\_rana\_a25\}@sunway.edu.np\\}
+         \{sanket\_24128469, sadikshya\_23140745, raunak\_regmi\_a25, satyam\_rana\_a25\, supriya\}@sunway.edu.np\\}
 
 
 
@@ -88,7 +89,7 @@ Recent work has increasingly highlighted the limitations of large language model
 
 The Nepali Cultural \& Commonsense Benchmark (\textbf{NeCCo}) is a curated dataset of 1,295 four-option multiple-choice questions (A--D) designed to evaluate culturally grounded reasoning in Nepali.\footnote{NeCCo is publicly available at \url{https://github.com/Mezamenta-Nakama09/NeCCo}.} Each question has a single correct answer, and the distractors are written to be plausible without requiring external tools or specialized knowledge.
 
-To study sensitivity to script and translation, each question is released in aligned Devanagari Nepali and Romanized Nepali. Romanized Nepali refers to the phonetic transcription of the native Devanagari script into the Latin alphabet, a format widely used in informal digital communication. Unlike standard Devanagari, Romanized text often lacks rigid spelling conventions. For example, the Devanagari word {\hindifont `राम्रो'} (good) is commonly romanized as `'\textit{ramro}', and a phrase like {\hindifont `के छ?'} (What's up?) might appear variously as \textit{`ke cha'}, \textit{`k cha'}, or \textit{`k chha'}.
+To study script sensitivity and translation, each question is released in aligned Devanagari Nepali and Romanized Nepali. Romanized Nepali refers to the phonetic transcription of the native Devanagari script into the Latin alphabet, a format widely used in informal digital communication~\cite{madhani2023aksharantar}. Unlike standard Devanagari, Romanized text often lacks rigid spelling conventions. For example, the Devanagari word {\hindifont `राम्रो'} (good) is commonly romanized as `'\textit{ramro}', and a phrase like {\hindifont `के छ?'} (What's up?) might appear variously as \textit{`ke cha'}, \textit{`k cha'}, or \textit{`k chha'}.
 
 We additionally provide English translations for categories where translation does not substantially distort the intended reasoning signal. Accordingly, the \textit{Kinship \& Social Hierarchy} and \textit{Idioms, Proverbs \& Metaphors} categories do not include English translations to preserve nuance. In total, NeCCo contains 3,460 released items: 1,295 (Devanagari) + 1,295 (Romanized) + 870 (English).\footnote{The 870 English items correspond to the 1,295 total questions minus the 425 questions in the two non-translated categories.} Category counts are shown in Table~\ref{tab:data_category_count}.
 
@@ -111,14 +112,14 @@ We additionally provide English translations for categories where translation do
 \end{table}
 
 \paragraph{Category Design}
-NeCCo is organized into five categories chosen to reflect core dimensions of Nepali cultural knowledge and everyday reasoning:
+NeCCo is organized into five categories chosen to reflect dimensions of Nepali cultural knowledge and everyday reasoning:
 
 \begin{itemize}
     \item \textbf{Kinship \& Social Hierarchy:} Tests understanding of kinship terms and social relations that encode lineage (maternal vs.\ paternal), birth order, and marital ties, as well as associated expectations of respect and address.
     \item \textbf{Festivals, Rituals \& Geography:} Covers religious and cultural observances, ritual objects and practices, and region-specific events shaped by Nepal’s geography.
-    \item \textbf{Idioms, Proverbs \& Metaphors:} Focuses on culturally embedded expressions whose meanings are not recoverable from literal translation, requiring contextual interpretation.
+    \item \textbf{Idioms, Proverbs \& Metaphors:} Focuses on culturally embedded expressions whose meanings cannot be derived from literal translation, requiring contextual interpretation.
     \item \textbf{Commonsense \& Daily Life:} Targets implicit norms in daily interactions, including etiquette, hospitality, purity concepts, and socially appropriate behavior.
-    \item \textbf{Gastronomy, Agriculture \& Nature:} Grounded in culinary practice and agrarian routines, including ingredient pairings, seasonality, planting cycles, and common tools.
+    \item \textbf{Gastronomy, Agriculture \& Nature:} Grounded in culinary practice and agrarian routines, like ingredient pairings, seasonality, planting cycles, and common tools.
 \end{itemize}
 
 Representative examples from each category and each released variant are provided in Appendix~\hyperref[app:examples]{A}.
@@ -138,7 +139,7 @@ For the categories that include English, we generated initial translations using
 \subsubsection{LLMs Used}
 We evaluate nine recent LLMs chosen to span a range of architectures, release types (proprietary vs.\ open-weight), and multilingual capabilities. Model selection was informed by contemporaneous standings on OpenRouter and other public leaderboards, with an emphasis on general instruction following and multilingual reasoning performance at the time of evaluation.\footnote{\href{https://openrouter.ai/rankings}{https://openrouter.ai/rankings}}
 
-The evaluated models are: GPT-4o-mini, GPT-5.2, and GPT-OSS-120B (OpenAI) \cite{hesham2024finetuning, ma2026safetyreport, openai2025gptoss}; Gemini 3 Flash Preview (Google DeepMind) \cite{zhang2026ophthalmology}; DeepSeek V3.2 \cite{deepseek2025v3}; Grok 4.1 Fast (xAI) \cite{ma2026safetyreport}; GLM-5 (Tsinghua University and Zhipu AI) \cite{zeng2026glm5}; Minimax M2.5 \cite{ko2026bilingualbias}; and Trinity Large Preview \cite{openrouter2026}. We include Trinity Large Preview in particular because it shows notably strong Nepali performance on OpenRouter, making it a relevant baseline for culturally grounded Nepali evaluation.
+The evaluated models are: GPT-4o-mini, GPT-5.2, and GPT-OSS-120B (OpenAI) \cite{hesham2024finetuning, ma2026safetyreport, openai2025gptoss}; Gemini 3 Flash Preview (Google DeepMind) \cite{zhang2026ophthalmology}; DeepSeek V3.2 \cite{deepseek2025v3}; Grok 4.1 Fast (xAI) \cite{ma2026safetyreport}; GLM-5 (Tsinghua University and Zhipu AI) \cite{zeng2026glm5}; Minimax M2.5 \cite{ko2026bilingualbias}; and Trinity Large Preview \cite{openrouter2026}. We include Trinity Large Preview in particular because it accounts for the highest usage share for Nepali on OpenRouter (see Appendix~\hyperref[app:openrouter_trinity]{C}), making it a highly relevant, community-preferred baseline for culturally grounded Nepali evaluation.
 
 \begin{figure*}[htbp]
     \centering
@@ -242,7 +243,7 @@ In this section, we summarize overall trends in accuracy to highlight where curr
 \paragraph{Comparative Accuracy across Categories. }
 Figure~\ref{fig:benchmark_bar_chart} illustrates a significant imbalance in how models capture cultural knowledge across different domains. Models perform exceptionally well on widely documented domains. For instance, Cultural Etiquette is the best performing category, with both GPT-5.2 and Gemini 3 Flash achieving peak accuracies of 0.93. Festivals also demonstrate strong cross-model performance, with top models consistently scoring above 0.80.
 
-Conversely, performance drops sharply on localized, community-specific domains like Agriculture and Geography. Agriculture is the most universally challenging category. Even the highest-performing models struggle in this area, with scores hovering between 0.30 and 0.51. This suggests a widespread deficit in implicit or rural localized knowledge. Furthermore, categories like Idioms/Proverbs and Kinship \& Social Hierarchy are highly model-dependent. Gemini 3 Flash excels in Idioms/Proverbs (0.87) and Kinship (0.82), whereas models like Trinity large and DeepSeek-V3.2 struggle significantly in these exact same categories (scoring between 0.42 and 0.55). This variance indicates that specific training mixtures allow certain models to grasp complex linguistic and social nuances that others miss. It is surprising that Trinity performed so poorly, even though it was the top-ranked model for Nepali on the OpenRouter leaderboard.
+Conversely, performance drops sharply on localized, community-specific domains like Agriculture and Geography. Agriculture is the most universally challenging category. Even the highest-performing models struggle in this area, with scores hovering between 0.30 and 0.51. This suggests a widespread deficit in implicit or rural localized knowledge. Furthermore, categories like Idioms/Proverbs and Kinship \& Social Hierarchy are highly model-dependent. Gemini 3 Flash excels in Idioms/Proverbs (0.87) and Kinship (0.82), whereas models like Trinity large and DeepSeek-V3.2 struggle significantly in these exact same categories (scoring between 0.42 and 0.55). This variance indicates that specific training mixtures allow certain models to grasp complex linguistic and social nuances that others miss. 
 
 \paragraph{Performance Comparison: English vs. Nepali vs. Romanized. }
 Figure~\ref{fig:language_comparison_bar} isolates the role of script and language form by evaluating each question across three formats. While aggregate trends favor native script, individual models exhibit fascinating divergence in their linguistic handling. Models such as Gemini 3 Flash and GLM-5 perform best in native Devanagari (0.83 and 0.78 respectively), outperforming their own English baselines. However, this is not a universal rule. GPT-5.2 demonstrates an inverted proficiency, performing best in English (0.78), followed by Romanized Nepali (0.75), and performing worst in native Devanagari (0.66). A similar trend is visible with GPT-4o Mini. This highlights that multilingual alignment varies heavily by model architecture, and language representation choices materially affect how reliably cultural commonsense is retrieved.
@@ -705,8 +706,17 @@ GLM-5 & 0.617& 0.636& 0.617& 0.623& 0.617& 0.636& 0.617& 0.623& 0.425& 0471& 0.4
 \label{tab:geography_results}
 \end{table*}
 
+\subsection*{Appendix C: OpenRouter Usage Snapshot for Nepali}
+\label{app:openrouter_trinity}
 
+Figure \ref{fig:trinity_openrouter} presents a snapshot of model usage statistics for the Nepali language on the OpenRouter platform, captured over a 30-day period ending in late March 2026. The data highlights Trinity Large Preview as the most frequently utilized model for Nepali prompts during this timeframe, accounting for 46.5\% of the total volume.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\columnwidth]{trinity_openrouter.jpeg}
+    \caption{Model usage share and token volume for the Nepali language on OpenRouter.}
+    \label{fig:trinity_openrouter}
+\end{figure}
 
 \end{document}
 
